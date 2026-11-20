@@ -89,6 +89,7 @@ class Eigendigits():
         basically compare the l2-norm of the image with every image in the training set
         and see which are closest together in the new dimensionally reduced shape
         """
-        norms = np.linalg.norm(self.scores(x_test - X_train), ord=2, axis=1)
+        #norms = np.linalg.norm(self.scores(x_test - X_train), ord=2, axis=1)
+        norms = np.linalg.norm((self.scores(x_test) - self.scores(X_train)), ord=2, axis=1)
         idx = np.argmin(norms)
         return y_train[idx]
