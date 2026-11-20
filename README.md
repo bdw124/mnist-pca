@@ -1,4 +1,4 @@
-PCA from Frist Principles: Eigendigits on MNIST 
+## PCA from Frist Principles: Eigendigits on MNIST 
 
 Principal Component Analysis (PCA) implemented from scratch in NumPy, then used to build a nearest-neighbour digit classifier in a reduced space. 
 
